@@ -1,0 +1,48 @@
+@use './variables';
+@use 'sass:color';
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: variables.$spacing-sm variables.$spacing-md;
+  border-radius: variables.$border-radius-md;
+  font-family: variables.$main-font;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button--primary {
+  background-color: variables.$color-yellow;
+  color: variables.$color-dark;
+
+  &:hover {
+    background-color: color.adjust(variables.$color-yellow, $lightness: -10%);
+  }
+}
+
+.button--secondary {
+  background-color: variables.$color-gray;
+  color: variables.$color-light;
+
+  &:hover {
+    background-color: color.adjust(variables.$color-gray, $lightness: 10%);
+  }
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 2px solid variables.$color-yellow;
+  color: variables.$color-yellow;
+
+  &:hover {
+    background-color: variables.$color-yellow;
+    color: variables.$color-dark;
+  }
+}
+
+.button--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

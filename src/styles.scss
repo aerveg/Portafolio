@@ -1,0 +1,164 @@
+@use './app/styles/variables';
+@use './app/styles/navbar';
+@use './app/styles/buttons';
+
+// CSS variables para uso en componentes o JS
+:root {
+  --color-dark:   #1A1617;
+  --color-yellow: #FEC400;
+  --color-pink:   #D9276B;
+  --color-gray:   #37383C;
+  --color-light:  #FDFDFD;
+}
+
+// Tipografías globales
+@font-face {
+  font-family: 'Vestige';
+  src: url('/assets/fonts/vestige.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onyra';
+  src: url('/assets/fonts/CalSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Estilos globales
+body {
+  font-family: variables.$main-font;
+  background-color: variables.$color-dark;
+  color: variables.$color-light;
+}
+
+.layout {
+  display: flex;
+
+  .sidebar {
+    width: 280px;
+    flex-shrink: 0;
+  }
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: variables.$spacing-xl;
+  }
+
+  &.is-mobile {
+    flex-direction: column;
+
+    .main-content {
+      padding: variables.$spacing-md;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.page-wrapper {
+  padding: variables.$spacing-xl;
+  background-color: variables.$color-dark;
+  color: variables.$color-light;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+// Typography System
+
+.title {
+  font-weight: variables.$font-weight-light;
+  font-size: variables.$size-xxxl;
+  margin-bottom: variables.$spacing-sm;
+  color: variables.$color-yellow;
+  font-family: variables.$main-font;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: variables.$size-lg;
+  margin-bottom: variables.$spacing-md;
+  font-family: variables.$second-font;
+  letter-spacing: 0.5px;
+  color: variables.$color-pink;
+  text-align: center;
+}
+
+.description {
+  font-family: variables.$second-font;
+  font-size: variables.$size-lg;
+  font-weight: variables.$font-weight-xxlight;
+  max-width: 700px;
+  margin: 0 auto variables.$spacing-lg;
+  line-height: 1.8;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: variables.$size-md;
+  max-width: 600px;
+  margin: variables.$spacing-lg auto;
+  color: variables.$color-yellow;
+  opacity: 0.8;
+  font-family: variables.$second-font;
+  text-align: center;
+}
+
+.section-block {
+  max-width: 700px;
+  margin: 0 auto variables.$spacing-lg;
+  font-family: variables.$second-font;
+  font-size: variables.$size-lg;
+  line-height: 1.6;
+  text-align: left;
+
+  h2 {
+    font-size: variables.$size-xxxl;
+    font-weight: variables.$font-weight-xxlight;
+    margin-bottom: variables.$spacing-sm;
+    color: variables.$color-yellow;
+    font-family: variables.$main-font;
+    text-align: center;
+  }
+
+  ul {
+    
+    list-style: disc;
+
+    li {
+      margin-bottom: variables.$spacing-xs;
+      color: variables.$color-light;
+      opacity: 0.9;
+
+      strong {
+        color: variables.$color-pink;
+      }
+    }
+  }
+}
+
+.contact-info {
+  font-family: variables.$second-font;
+  font-size: variables.$size-sm;
+  margin-top: variables.$spacing-md;
+  text-align: center;
+
+  a {
+    color: variables.$color-pink;
+    text-decoration: none;
+    margin: 0 variables.$spacing-xs;
+    transition: color 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: variables.$color-yellow;
+    }
+  }
+}
