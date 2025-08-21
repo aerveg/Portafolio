@@ -1,0 +1,135 @@
+{
+  "home": {
+  "title": "Ariel Eduardo Ramírez Vega",
+  "subtitle": "Desarrollador Full-Stack | Lic. en Informática Administrativa",
+  "description": "Enfoque en desarrollo Front-End y mobile con tecnologías como Angular, React, Node.js y Kotlin. Apasionado por la escritura de código limpio, modular y centrado en la experiencia de usuario. Bilingüe en inglés y español, con enfoque en soluciones escalables y componentes reutilizables.",
+  "description2": "Mientras estudiaba mi carrera universitaria, trabajé en call centers para sostenerme económicamente. Esa etapa me enseñó a ser disciplinado, a comunicarme con claridad y a mantener el enfoque en mis metas. Hoy aplico esa misma determinación en cada línea de código que escribo.",
+  "contact": {
+    "email": "Email",
+    "phone": "Telefono",
+    "linkedin": "LinkedIn"
+  },
+  "values": {
+    "title": "Cómo trabajo",
+    "points": [
+      "Código limpio y modular, siempre.",
+      "Interfaces intuitivas y accesibles.",
+      "Arquitectura escalable y sostenible.",
+      "Comunicación clara con equipos y clientes.",
+      "Aprendizaje continuo como hábito."
+    ]
+  },
+  "tech": {
+    "title": "Tecnologías que disfruto",
+    "items": [
+      { "name": "Angular", "reason": "Por su estructura clara y escalabilidad." },
+      { "name": "SCSS", "reason": "Porque me permite controlar estilos con precisión." },
+      { "name": "Node.js", "reason": "Ideal para construir APIs limpias y eficientes." },
+      { "name": "Kotlin", "reason": "Me encanta su sintaxis concisa y moderna." }
+    ]
+  },
+  "quote": "No busco escribir más código, busco escribir mejor código. Cada componente, cada estilo, cada decisión técnica debe tener propósito y claridad."
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "role": "Desarrollador Full-Stack"
+  },
+"contact": {
+  "title": "Contáctame",
+  "subtitle": "Siempre abierto a nuevas ideas y colaboraciones.",
+  "description": "Estoy disponible para colaborar, conversar o compartir ideas. Puedes escribirme o llamarme directamente.",
+  "methodsTitle": "Formas de contacto",
+  "quote": "La mejor solución técnica comienza con una buena conversación.",
+  "email": "aervega@gmail.com",
+  "phone": "+504 9682-2201",
+  "linkedin": "LinkedIn"
+},
+  "about": {
+  "title": "Sobre mí",
+  "sections": [
+    {
+      "subtitle": "Inicio universitario y desarrollo personal",
+      "content": [
+        "Comencé la universidad en 2015, equilibrando la vida académica con diversos trabajos informales para mantenerme. Esta etapa me ayudó a desarrollar habilidades sociales, mejorar mi organización personal y fortalecer mi disciplina.",
+        "Entre 2019 y 2021 trabajé en un centro de llamadas en varias líneas de negocio, incluyendo atención al cliente y soporte técnico. Durante ese tiempo, adquirí experiencia práctica con plataformas CMS de Amazon y sistemas de telecomunicaciones de Comcast, desarrollando una base sólida en navegación de sistemas, empatía con el usuario y resolución técnica."
+      ]
+    },
+    {
+      "subtitle": "Transición profesional y enfoque técnico",
+      "content": [
+        "A principios de 2022, me desempeñé como intérprete médico (inglés–español), y más adelante ese mismo año regresé al servicio al cliente en el sector de seguros médicos. Nuevamente trabajé con plataformas CMS, perfeccionando mi capacidad de comunicarme con claridad, resolver problemas de forma eficiente y adaptarme a flujos de trabajo complejos.",
+        "Para mediados de 2023, decidí enfocar completamente mi atención en la universidad, profundizando mi experiencia técnica y afinando mi visión arquitectónica."
+      ]
+    },
+    {
+      "subtitle": "Primer proyecto como desarrollador",
+      "content": [
+        "Durante mi etapa universitaria, participé en proyectos de vinculación con la sociedad. Uno de ellos fue el desarrollo de un sistema web para una cooperativa, el cual incluía el registro de cuentas de clientes y un sistema de acceso para empleados.",
+        "Se implementó un controlador para el dirigente de la cooperativa, permitiéndole visualizar todos los cambios realizados, identificar qué usuarios los ejecutaron, y gestionar roles personalizados con permisos específicos para acceder, editar o visualizar distintas secciones del sistema.",
+        "Mi principal rol en este proyecto fue en el desarrollo del front-end, trabajando con tecnologías como Nest.js y Laravel, enfocándome en la interfaz, la experiencia del usuario y la integración con la lógica del backend."
+      ]
+    },
+    {
+      "subtitle": "Práctica profesional en STI Globals",
+      "content": [
+        "Mi práctica profesional se desarrolló en STI Globals, una empresa de desarrollo pequeña en la que trabajé principalmente con React, Node.js y Kotlin.",
+        "Participé en el desarrollo de una aplicación móvil con React Native, en un sistema POS trabajando en la base del sistema de pagos y en la visualización del historial reciente del punto de venta.",
+        "También colaboré en el rediseño completo del nuevo sitio web de la empresa, que aún no ha sido implementado. En este último proyecto, me encargué principalmente del front-end, realizando todos los cambios solicitados desde cero."
+      ]
+    },
+    {
+      "subtitle": "Especialización técnica",
+      "content": [
+        "Actualmente me especializo en desarrollo front-end modular utilizando Angular, SCSS, React, Node.js y Kotlin. Me apasiona el código limpio, el diseño responsivo y la construcción de componentes escalables que se alineen tanto con estándares técnicos como narrativos.",
+        "Cada decisión que tomo—ya sea en el diseño, la lógica o la documentación—está guiada por la claridad, la mantenibilidad y el propósito."
+      ]
+    }
+  ],
+  "achievements": {
+    "title": "Logros destacados",
+    "items": [
+      {
+        "name": "Diseñado e implementado desde cero",
+        "reason": "Rediseñé completamente el sitio web de STI Globals, desde la arquitectura hasta la implementación, cumpliendo con estándares de escalabilidad y claridad técnica."
+      },
+      {
+        "name": "Contribuí al desarrollo",
+        "reason": "Participé activamente en la creación de una aplicación móvil con React Native, aportando mejoras en la navegación y estabilidad del sistema."
+      },
+      {
+        "name": "Mejoré la experiencia",
+        "reason": "Refactoricé componentes clave para optimizar la usabilidad en múltiples dispositivos, asegurando una experiencia fluida y coherente."
+      },
+      {
+        "name": "Optimicé la visualización del historial",
+        "reason": "En el sistema POS, reestructuré la interfaz de historial de transacciones para facilitar la lectura, búsqueda y trazabilidad."
+      },
+      {
+        "name": "Desarrollé un sistema con trazabilidad de cambios",
+        "reason": "Implementé un sistema administrativo para una cooperativa, con control de roles, vistas segmentadas y registro de modificaciones."
+      },
+      {
+        "name": "Mantuve una estructura clara",
+        "reason": "En todos mis proyectos, he priorizado una arquitectura modular, documentada y fácil de escalar, facilitando el mantenimiento y la incorporación de nuevos desarrolladores."
+      }
+    ]
+  }
+},
+"projects": {
+  "title": "Proyectos",
+  "intro": "Aquí encontrarás una selección de proyectos que reflejan mi enfoque técnico, claridad arquitectónica y compromiso con soluciones escalables. Esta sección se actualizará conforme avance en nuevos desarrollos.",
+  "items": [
+    {
+      "name": "Proyecto en desarrollo",
+      "description": "Actualmente estoy trabajando en un proyecto que busca integrar internacionalización, diseño responsivo y arquitectura modular en una plataforma web. Pronto compartiré más detalles."
+    },
+    {
+      "name": "Espacio reservado",
+      "description": "Este espacio está destinado a futuros proyectos que destaquen mi capacidad para resolver problemas complejos con soluciones elegantes y mantenibles."
+    }
+  ]
+}
+}
