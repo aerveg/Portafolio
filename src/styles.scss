@@ -1,6 +1,6 @@
 @use './app/styles/variables';
-@use './app/styles/navbar';
 @use './app/styles/buttons';
+@use './app/styles/navbar-layout' as layout;
 
 // CSS variables para uso en componentes o JS
 :root {
@@ -27,7 +27,10 @@
 }
 
 // Estilos globales
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: variables.$main-font;
   background-color: variables.$color-dark;
   color: variables.$color-light;
@@ -35,31 +38,203 @@ body {
 
 .layout {
   display: flex;
+  min-height: 100vh;
 
-  .sidebar {
-    width: 280px;
+  .navbar {
     flex-shrink: 0;
+    background-color: variables.$color-gray;
+    color: variables.$color-light;
+    text-align: center;
+
+    &.--sidebar {
+      @include layout.sidebar-layout;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+     
+     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &.--mobile {
+      @include layout.mobile-layout;
+      width: 100%;
+      padding: variables.$spacing-sm;
+    }
+
+    &__profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: variables.$spacing-md;
+    }
+
+    &__photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid variables.$color-yellow;
+      margin-bottom: variables.$spacing-sm;
+    }
+
+    &__name {
+      font-size: variables.$size-xxxl;
+      font-weight: variables.$font-weight-light;
+      color: variables.$color-yellow;
+      margin-bottom: variables.$spacing-xs;
+    }
+
+    &__role {
+      font-size: variables.$size-lg;
+      color: variables.$color-pink;
+    }
+
+    &__nav,
+    &__mobile-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+
+      li {
+        margin: variables.$spacing-sm 0;
+
+        a {
+          font-size: variables.$size-xl;
+          color: variables.$color-light;
+          text-decoration: none;
+
+          &.active,
+          &:hover {
+            color: variables.$color-yellow;
+          }
+        }
+      }
+    }
+
+    &__lang,
+    &__mobile-lang {
+      display: flex;
+      justify-content: center;
+      margin-top: variables.$spacing-sm;
+
+      button {
+    display: flex;
+    align-items: center;
+    gap: variables.$spacing-xs;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    padding: variables.$spacing-xs variables.$spacing-sm;
+    margin-bottom: variables.$spacing-sm;
+
+
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: variables.$color-yellow;
+    }
+  }
+}
+
+
+    &__social{
+      display: flex;
+      justify-content: center;
+      gap: variables.$spacing-lg;
+      
+
+      a {
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 35px;
+          height: 35px;
+          fill: variables.$color-light;
+          transition: fill 0.3s ease;
+
+          &:hover {
+            fill: variables.$color-pink;
+          }
+        }
+      }}
+    &__mobile-social {
+      display: flex;
+      justify-content: center;
+      gap: variables.$spacing-sm;
+      margin-top: auto;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          fill: variables.$color-light;
+          transition: fill 0.3s ease;
+
+          &:hover {
+            fill: variables.$color-pink;
+          }
+        }
+      }
+    }
+
+    &__hamburger {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: variables.$color-yellow;
+      cursor: pointer;
+    }
+
+    &__mobile-menu {
+      background-color: variables.$color-gray;
+      padding: variables.$spacing-md;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: variables.$spacing-md;
+    }
   }
 
   .main-content {
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: variables.$spacing-xl;
   }
 
   &.is-mobile {
     flex-direction: column;
 
     .main-content {
-      padding: variables.$spacing-md;
+     
       justify-content: flex-start;
+    }
+
+    .navbar {
+      width: 100%;
     }
   }
 }
 
 .page-wrapper {
-  padding: variables.$spacing-xl;
   background-color: variables.$color-dark;
   color: variables.$color-light;
   min-height: 100vh;

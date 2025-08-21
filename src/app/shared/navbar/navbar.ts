@@ -37,8 +37,12 @@ import { ScreenService } from '../../services/screen.service';
   </div>
 
   <div class="navbar__lang">
-    <button (click)="switchLang('es')">ES</button>
-    <button (click)="switchLang('en')">EN</button>
+    <button (click)="switchLang('es')">
+    <img src="/assets/img/flag-es.webp" alt="Español" />
+  </button>
+  <button (click)="switchLang('en')">
+    <img src="/assets/img/flag-en.webp" alt="English" />
+  </button>
   </div>
 
   <div class="navbar__social">
@@ -77,9 +81,13 @@ import { ScreenService } from '../../services/screen.service';
   </ng-container>
 
     <div class="navbar__mobile-lang">
-      <button (click)="switchLang('es')">ES</button>
-      <button (click)="switchLang('en')">EN</button>
-    </div>
+  <button (click)="switchLang('es')">
+    <img src="/assets/img/flag-es.webp" alt="Español" />
+  </button>
+  <button (click)="switchLang('en')">
+    <img src="/assets/img/flag-en.webp" alt="English" />
+  </button>
+</div>
 
     <div class="navbar__mobile-social">
       <a href="https://github.com/aervega" target="_blank" aria-label="GitHub">
