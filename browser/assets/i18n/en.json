@@ -1,0 +1,135 @@
+{
+  "home": {
+    "title": "Ariel Eduardo Ramírez Vega",
+    "subtitle": "Full-Stack Developer | B.A. in Administrative Informatics",
+    "description": "Focused on Front-End and mobile development using technologies like Angular, React, Node.js, and Kotlin. Passionate about writing clean, modular code centered on user experience. Bilingual in English and Spanish, with a strong emphasis on scalable solutions and reusable components.",
+    "description2": "While pursuing my university degree, I worked in call centers to support myself financially. That phase taught me discipline, clear communication, and how to stay focused on my goals. Today, I apply that same determination to every line of code I write.",
+    "contact": {
+      "email": "Email",
+      "phone": "Phone",
+      "linkedin": "LinkedIn"
+    },
+    "values": {
+      "title": "How I Work",
+      "points": [
+        "Clean and modular code, always.",
+        "Intuitive and accessible interfaces.",
+        "Scalable and sustainable architecture.",
+        "Clear communication with teams and clients.",
+        "Continuous learning as a habit."
+      ]
+    },
+    "tech": {
+      "title": "Technologies I Enjoy",
+      "items": [
+        { "name": "Angular", "reason": "For its clear structure and scalability." },
+        { "name": "SCSS", "reason": "Because it gives me precise control over styles." },
+        { "name": "Node.js", "reason": "Ideal for building clean and efficient APIs." },
+        { "name": "Kotlin", "reason": "I love its concise and modern syntax." }
+      ]
+    },
+    "quote": "I don't aim to write more code—I aim to write better code. Every component, every style, every technical decision must have purpose and clarity."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "role": "Full-Stack Developer"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Always open to new ideas and collaborations.",
+    "description": "I'm available to collaborate, chat, or share ideas. Feel free to write or call me directly.",
+    "methodsTitle": "Ways to Reach Me",
+    "quote": "The best technical solution begins with a good conversation.",
+    "email": "aervega@gmail.com",
+    "phone": "+504 9682-2201",
+    "linkedin": "LinkedIn"
+  },
+  "about": {
+    "title": "About Me",
+    "sections": [
+      {
+        "subtitle": "University Beginnings and Personal Growth",
+        "content": [
+          "I began university in 2015, balancing academic life with various informal jobs to support myself. That stage helped me develop social skills, improve personal organization, and strengthen my discipline.",
+          "From 2019 to 2021, I worked in a call center across multiple business lines, including customer service and technical support. During that time, I gained hands-on experience with Amazon CMS platforms and Comcast telecommunications systems, building a strong foundation in system navigation, user empathy, and technical resolution."
+        ]
+      },
+      {
+        "subtitle": "Professional Transition and Technical Focus",
+        "content": [
+          "In early 2022, I worked as a medical interpreter (English–Spanish), and later that year returned to customer service in the healthcare insurance sector. Once again, I worked with CMS platforms, refining my ability to communicate clearly, solve problems efficiently, and adapt to complex workflows.",
+          "By mid-2023, I shifted my full focus to university, deepening my technical expertise and sharpening my architectural vision."
+        ]
+      },
+      {
+        "subtitle": "First Project as a Developer",
+        "content": [
+          "During my university years, I participated in social engagement projects. One of them involved developing a web system for a cooperative, which included account registration for clients and an access system for employees.",
+          "A controller was implemented for the cooperative’s leader, allowing them to view all changes made, identify which users executed them, and manage custom roles with specific permissions to access, edit, or view different sections of the system.",
+          "My main role in this project was front-end development, working with technologies like Nest.js and Laravel, focusing on the interface, user experience, and backend integration."
+        ]
+      },
+      {
+        "subtitle": "Professional Internship at STI Globals",
+        "content": [
+          "My professional internship took place at STI Globals, a small development company where I worked mainly with React, Node.js, and Kotlin.",
+          "I contributed to the development of a mobile application using React Native, a POS system working on the payment infrastructure and transaction history display.",
+          "I also collaborated on the complete redesign of the company’s new website, which has not yet been implemented. In this last project, I was primarily responsible for the front-end, executing all requested changes from scratch."
+        ]
+      },
+      {
+        "subtitle": "Technical Specialization",
+        "content": [
+          "I currently specialize in modular front-end development using Angular, SCSS, React, Node.js, and Kotlin. I'm passionate about clean code, responsive design, and building scalable components that align with both technical and narrative standards.",
+          "Every decision I make—whether in layout, logic, or documentation—is guided by clarity, maintainability, and purpose."
+        ]
+      }
+    ],
+    "achievements": {
+      "title": "Key Achievements",
+      "items": [
+        {
+          "name": "Designed and implemented from scratch",
+          "reason": "Redesigned STI Globals’ website completely, from architecture to implementation, meeting standards of scalability and technical clarity."
+        },
+        {
+          "name": "Contributed to development",
+          "reason": "Actively participated in building a mobile app with React Native, improving navigation and system stability."
+        },
+        {
+          "name": "Improved user experience",
+          "reason": "Refactored key components to optimize usability across multiple devices, ensuring a smooth and consistent experience."
+        },
+        {
+          "name": "Optimized transaction history display",
+          "reason": "In the POS system, restructured the transaction history interface to enhance readability, searchability, and traceability."
+        },
+        {
+          "name": "Developed a system with change traceability",
+          "reason": "Implemented an administrative system for a cooperative, with role control, segmented views, and change tracking."
+        },
+        {
+          "name": "Maintained a clear structure",
+          "reason": "In all my projects, I’ve prioritized a modular, well-documented, and scalable architecture to support maintainability and developer onboarding."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "intro": "Here you'll find a selection of projects that reflect my technical approach, architectural clarity, and commitment to scalable solutions. This section will be updated as new developments progress.",
+    "items": [
+      {
+        "name": "Project in progress",
+        "description": "I'm currently working on a project that integrates internationalization, responsive design, and modular architecture into a web platform. More details coming soon."
+      },
+      {
+        "name": "Reserved space",
+        "description": "This space is reserved for future projects that showcase my ability to solve complex problems with elegant and maintainable solutions."
+      }
+    ]
+  }
+}
